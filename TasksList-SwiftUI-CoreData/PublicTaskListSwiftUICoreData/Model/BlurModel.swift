@@ -8,8 +8,9 @@
 import SwiftUI
 
 
+
 struct BlurModel : UIViewRepresentable {
-    
+//blur
     var style: UIBlurEffect.Style
     
     func makeUIView(context: Context) -> UIVisualEffectView {
