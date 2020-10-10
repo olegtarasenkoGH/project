@@ -2,7 +2,7 @@
 //  DetailHeroView.swift
 //  HeroesCombineSwiftUI
 //
-//  Created by Олег Тарасенко on 9/13/20.
+//  Created by Олег Тарасенко on 9/14/20.
 //
 
 import SwiftUI
@@ -20,7 +20,7 @@ struct DetailHeroView: View {
                 .font(.title)
             Text(viewModel.hero?.biography.alterEgos ?? "")
                 .font(.title)
-            Image(url: viewModel.hero?.images?.medium ?? "")
+            ImageView(url: viewModel.hero?.images?.medium ?? "")
         }.onAppear {
             self.viewModel.getHero(id: self.id ?? 0)
         }
@@ -28,14 +28,14 @@ struct DetailHeroView: View {
     }
 }
 
-   struct Image: View {
+   struct ImageView: View {
        var url: String?
 
        var body: some View {
-           guard let u = URL(string: url ?? "") else {
+           guard let urlImage = URL(string: url ?? "") else {
                return AnyView(Text("Loading..."))
            }
-           return AnyView(URLImage(u))
+           return AnyView(URLImage(urlImage))
        }
    }
 

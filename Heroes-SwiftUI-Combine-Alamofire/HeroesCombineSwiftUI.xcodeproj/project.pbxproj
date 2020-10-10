@@ -26,7 +26,6 @@
 		847CD59E25321BE90089A801 /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CD59D25321BE90089A801 /* ColorModel.swift */; };
 		847CD5A225321E9A0089A801 /* HeroItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CD5A125321E9A0089A801 /* HeroItemView.swift */; };
 		847CD5A6253225B30089A801 /* SwipeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CD5A5253225B30089A801 /* SwipeButtonView.swift */; };
-		847CD5AA253226FC0089A801 /* ControlListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CD5A9253226FC0089A801 /* ControlListVM.swift */; };
 		847CD5AD253233C90089A801 /* WaveShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CD5AC253233C90089A801 /* WaveShapeView.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,7 +49,6 @@
 		847CD59D25321BE90089A801 /* ColorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
 		847CD5A125321E9A0089A801 /* HeroItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroItemView.swift; sourceTree = "<group>"; };
 		847CD5A5253225B30089A801 /* SwipeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeButtonView.swift; sourceTree = "<group>"; };
-		847CD5A9253226FC0089A801 /* ControlListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlListVM.swift; sourceTree = "<group>"; };
 		847CD5AC253233C90089A801 /* WaveShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveShapeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,7 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				844E5D6D2509C5C7005F0D0F /* HeroesVM.swift */,
-				847CD5A9253226FC0089A801 /* ControlListVM.swift */,
 				84671439250F75EC0068DE09 /* DetailHeroVM.swift */,
 				8467143E250F85440068DE09 /* ImageVM.swift */,
 			);
@@ -235,7 +232,6 @@
 				847CD5A225321E9A0089A801 /* HeroItemView.swift in Sources */,
 				844E5D6E2509C5C7005F0D0F /* HeroesVM.swift in Sources */,
 				844E5D542509C1D3005F0D0F /* HeroesCombineSwiftUI.xcdatamodeld in Sources */,
-				847CD5AA253226FC0089A801 /* ControlListVM.swift in Sources */,
 				8467143A250F75EC0068DE09 /* DetailHeroVM.swift in Sources */,
 				844E5D4F2509C1D3005F0D0F /* SceneDelegate.swift in Sources */,
 				844E5D512509C1D3005F0D0F /* ContentView.swift in Sources */,

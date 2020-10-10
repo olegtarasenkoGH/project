@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HeroListView: View {
     @ObservedObject var heroesViewModel = HeroesViewModel()
+    
     var body: some View
         ScrollView(.vertical, showsIndicators: true) {
             ForEach(heroesViewModel.heroes) { mail in
@@ -22,21 +23,21 @@ struct HeroListView: View {
                                     // handle swipe
                                     if value.translation.width > 0 {
                                         if !mail.isRead {
-                                            manager.handleReadGesture(mail: mail, swipeWidth: value.translation.width)
+                                            heroesViewModel.handleReadGesture(mail: mail, swipeWidth: value.translation.width)
                                         }
                                         //lets take it one step further by swipping left to delete the mail
                                     } else if value.translation.width < 0 {
                                         // handle delete gesture
-                                        manager.handleDeleteGesture(mail: mail, swipeWidth: value.translation.width)
+                                        heroesViewModel.handleDeleteGesture(mail: mail, swipeWidth: value.translation.width)
                                     }
                                 })
                                 .onEnded({ _ in
-                                    manager.swipeEnded()
+                                    heroesViewModel.swipeEnded()
                                 })
                         )
                         .onTapGesture {
-                            manager.markRead(mail: mail)
-                            manager.selectedMail = mail
+                            heroesViewModel.markRead(mail: mail)
+                            heroesViewModel.selectedMail = mail
                         }
                 }
             }
@@ -44,6 +45,5 @@ struct HeroListView: View {
         }
     }
 }
-
 // mail list view with LazyVStack
 

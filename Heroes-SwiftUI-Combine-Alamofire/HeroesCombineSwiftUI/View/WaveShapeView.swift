@@ -58,7 +58,6 @@ struct WaveShapeView: Shape {
             path.addLine(to: CGPoint(x: width, y: 0))
         }
         
-        
         return path
     }
 }

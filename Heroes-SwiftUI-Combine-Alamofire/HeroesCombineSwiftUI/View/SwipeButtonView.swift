@@ -44,7 +44,7 @@ struct ReadButtonView: View {
     let hero: Hero
     var body: some View {
         ZStack {
-            WaveShape(waveWidth: hero.offsetX, isLeft: true)
+            WaveShapeView(waveWidth: hero.offsetX, isLeft: true)
                 .fill(Color.appGreen)
                 .frame(width: 60)
             Image(systemName: "checkmark")
@@ -56,28 +56,18 @@ struct ReadButtonView: View {
 }
 
 struct DeleteButtonView: View {
-    let mail: MailItem
+    let hero: Hero
     var body: some View {
         ZStack {
-            WaveShape(waveWidth: mail.offsetX, isLeft: false)
+            WaveShapeView(waveWidth: hero.offsetX, isLeft: false)
                 .fill(Color.red)
                 .frame(width: 60)
             Image(systemName: "xmark")
                 .font(.system(size: 16, weight: .bold))
                 .foregroundColor(.white)
-                .opacity(mail.offsetX < -50 ? 1.0 : 0.0)
+                .opacity(hero.offsetX < -50 ? 1.0 : 0.0)
         }
         
         
-    }
-}
-
-
-//swipe view
-struct SwipeButtonView: View {
-    @ObservedObject var manager: MailManager
-    let mail: MailItem
-    var body: some View {
-      
     }
 }
