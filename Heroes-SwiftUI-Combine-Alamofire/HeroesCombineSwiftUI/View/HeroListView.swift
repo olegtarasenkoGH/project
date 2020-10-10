@@ -1,5 +1,5 @@
 //
-//  SwiftUIView.swift
+//  HeroListView.swift
 //  HeroesCombineSwiftUI
 //
 //  Created by Олег Тарасенко on 10/10/20.
@@ -8,13 +8,12 @@
 import SwiftUI
 
 struct HeroListView: View {
-    @ObservedObject var heroesViewModel = HeroesViewModel()
-    
-    var body: some View
+    @ObservedObject var heroesViewModel = HeroesViewModel
+    var body: some View {
         ScrollView(.vertical, showsIndicators: true) {
-            ForEach(heroesViewModel.heroes) { mail in
+            ForEach(heroesViewModel.heroes) { hero in
                 ZStack {
-                //    SwipeButtonView(manager: manager, mail: mail)
+                    SwipeButtonView(heroesViewModel: heroesViewModel, hero: hero)
                     
                     HeroItemView(hero: hero)
                         .gesture(
@@ -22,13 +21,13 @@ struct HeroListView: View {
                                 .onChanged({ value in
                                     // handle swipe
                                     if value.translation.width > 0 {
-                                        if !mail.isRead {
-                                            heroesViewModel.handleReadGesture(mail: mail, swipeWidth: value.translation.width)
+                                        if !hero.isRead {
+                                            heroesViewModel.handleReadGesture(hero: hero, swipeWidth: value.translation.width)
                                         }
                                         //lets take it one step further by swipping left to delete the mail
                                     } else if value.translation.width < 0 {
                                         // handle delete gesture
-                                        heroesViewModel.handleDeleteGesture(mail: mail, swipeWidth: value.translation.width)
+                                        heroesViewModel.handleDeleteGesture(hero: hero, swipeWidth: value.translation.width)
                                     }
                                 })
                                 .onEnded({ _ in
@@ -36,8 +35,8 @@ struct HeroListView: View {
                                 })
                         )
                         .onTapGesture {
-                            heroesViewModel.markRead(mail: mail)
-                            heroesViewModel.selectedMail = mail
+                            heroesViewModel.fetchHeroes()
+                            heroesViewModel.selectedHero = hero
                         }
                 }
             }
@@ -45,5 +44,6 @@ struct HeroListView: View {
         }
     }
 }
+
 // mail list view with LazyVStack
 

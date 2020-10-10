@@ -18,7 +18,7 @@
 		844E5D6E2509C5C7005F0D0F /* HeroesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E5D6D2509C5C7005F0D0F /* HeroesVM.swift */; };
 		84671434250E97830068DE09 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 84671433250E97830068DE09 /* Alamofire */; };
 		84671436250E991D0068DE09 /* HeroesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84671435250E991D0068DE09 /* HeroesService.swift */; };
-		84671438250EA3720068DE09 /* DetailHeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84671437250EA3720068DE09 /* DetailHeroView.swift */; };
+		84671438250EA3720068DE09 /* HeroDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84671437250EA3720068DE09 /* HeroDetailView.swift */; };
 		8467143A250F75EC0068DE09 /* DetailHeroVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84671439250F75EC0068DE09 /* DetailHeroVM.swift */; };
 		8467143D250F7A1F0068DE09 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 8467143C250F7A1F0068DE09 /* URLImage */; };
 		8467143F250F85440068DE09 /* ImageVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8467143E250F85440068DE09 /* ImageVM.swift */; };
@@ -42,7 +42,7 @@
 		844E5D672509C54F005F0D0F /* HeroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroModel.swift; sourceTree = "<group>"; };
 		844E5D6D2509C5C7005F0D0F /* HeroesVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesVM.swift; sourceTree = "<group>"; };
 		84671435250E991D0068DE09 /* HeroesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesService.swift; sourceTree = "<group>"; };
-		84671437250EA3720068DE09 /* DetailHeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeroView.swift; sourceTree = "<group>"; };
+		84671437250EA3720068DE09 /* HeroDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailView.swift; sourceTree = "<group>"; };
 		84671439250F75EC0068DE09 /* DetailHeroVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeroVM.swift; sourceTree = "<group>"; };
 		8467143E250F85440068DE09 /* ImageVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageVM.swift; sourceTree = "<group>"; };
 		847CD59A25321A970089A801 /* HeroListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroListView.swift; sourceTree = "<group>"; };
@@ -119,7 +119,7 @@
 				844E5D502509C1D3005F0D0F /* ContentView.swift */,
 				847CD59A25321A970089A801 /* HeroListView.swift */,
 				847CD5A125321E9A0089A801 /* HeroItemView.swift */,
-				84671437250EA3720068DE09 /* DetailHeroView.swift */,
+				84671437250EA3720068DE09 /* HeroDetailView.swift */,
 				847CD5AC253233C90089A801 /* WaveShapeView.swift */,
 				847CD5A5253225B30089A801 /* SwipeButtonView.swift */,
 				844E5D5A2509C1D6005F0D0F /* LaunchScreen.storyboard */,
@@ -235,7 +235,7 @@
 				8467143A250F75EC0068DE09 /* DetailHeroVM.swift in Sources */,
 				844E5D4F2509C1D3005F0D0F /* SceneDelegate.swift in Sources */,
 				844E5D512509C1D3005F0D0F /* ContentView.swift in Sources */,
-				84671438250EA3720068DE09 /* DetailHeroView.swift in Sources */,
+				84671438250EA3720068DE09 /* HeroDetailView.swift in Sources */,
 				84671436250E991D0068DE09 /* HeroesService.swift in Sources */,
 				847CD5AD253233C90089A801 /* WaveShapeView.swift in Sources */,
 				844E5D682509C54F005F0D0F /* HeroModel.swift in Sources */,
@@ -308,7 +308,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -363,7 +363,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -390,7 +390,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Oleg.HeroesCombineSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -411,7 +411,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Oleg.HeroesCombineSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

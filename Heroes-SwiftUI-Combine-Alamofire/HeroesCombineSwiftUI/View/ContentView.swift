@@ -16,49 +16,23 @@ struct ContentView: View {
         
         ZStack {
             if #available(iOS 14.0, *) {
-                Color.darkPurple .ignoresSafeArea()  } else { }
+                Color.darkPurple
+                    .ignoresSafeArea()  } else { }
             
-            
-            
-            
-//                   MailListView(manager: manager)
+           
+               HeroListView(heroesViewModel: heroesViewModel)
                    
-//                   if manager.selectedMail != nil {
-//                       MailDetailView(manager: manager)
+                  if heroesViewModel.selectedHero != nil {
+                    HeroDetailView(heroesViewModel: heroesViewModel)
                    }
-               }
-        
+
+        }
+    }
+
+// colors
+
+
 }
-
-    
-        
-//        NavigationView {
-//        List(viewModel.heroes) { hero in
-//            HStack {
-//                VStack(alignment: .leading) {
-//                    NavigationLink(destination: DetailHeroView(id: hero.id)) {
-//                    Text(hero.name).font(.headline)
-//                    Text(hero.slug).font(.headline)
-//                }
-//                }
-//            }
-//        }
-//    }
-//        .navigationBarTitle("Navigation", displayMode: .inline)
-//    }
-//}
-
-
-
-
-
-
-
-
-
-
-
-// 1 colors
 
 extension Color {
     static let darkPurple = Color.init(red: 120/255, green: 106/255, blue: 213/255)
@@ -66,11 +40,3 @@ extension Color {
     static let lightPurple = Color.init(red: 139/255, green: 124/255, blue: 225/255)
     static let appGreen = Color.init(red: 45/255, green: 188/255, blue: 179/255)
 }
-
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
-

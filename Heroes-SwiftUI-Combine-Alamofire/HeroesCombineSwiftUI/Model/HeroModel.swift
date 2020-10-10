@@ -6,8 +6,6 @@
 //
 
 import SwiftUI
-import Combine
-import Alamofire
 
 struct Hero: Codable, Identifiable {    //MailItem
  
@@ -27,7 +25,6 @@ struct Hero: Codable, Identifiable {    //MailItem
         case slug
         case biography
         case images
-        
         
     }
 }
@@ -50,8 +47,6 @@ struct Biography: Codable {
 //    var offsetX: CGFloat = 0.0
 //    var isRead = false
 //}
-
-
 
 struct Images: Codable {
     let medium: String
