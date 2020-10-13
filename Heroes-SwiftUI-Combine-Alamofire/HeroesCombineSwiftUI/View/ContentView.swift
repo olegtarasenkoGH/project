@@ -13,15 +13,11 @@ struct ContentView: View {
     var body: some View {
        
         ZStack {
-            
-            Color.darkPurple
-                      
-           
+            Color.radial
+               
             HeroListView(viewModel: viewModel)
-                
-        }
-        
-        .edgesIgnoringSafeArea(.all)
+            
+        }.edgesIgnoringSafeArea(.all)
     }
 }
 

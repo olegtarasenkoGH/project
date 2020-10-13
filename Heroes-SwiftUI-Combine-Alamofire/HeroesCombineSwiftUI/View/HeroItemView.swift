@@ -13,7 +13,9 @@ struct HeroItemView: View {
     var body: some View {
         ZStack {
             Color.lightPurple
-                .cornerRadius(15)
+               
+                .clipShape(RoundedRectangle(cornerRadius: 25, style: .continuous))
+                .shadow(color: Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)).opacity(0.2), radius: 15, x: 0, y: 0)
             
             HStack(alignment: .top) {
                 VStack(alignment: .leading, spacing: 4) {
