@@ -9,59 +9,43 @@ import SwiftUI
 import Combine
 import  URLImage
 
-
 struct HeroDetailView: View {
-    var id: Int?
-    @ObservedObject var heroesViewModel: HeroesViewModel
     
+    @ObservedObject var viewModel: HeroesViewModel
     var body: some View {
-        ZStack {
+        ZStack(alignment: .center) {
             Color.darkPurple
-                .ignoresSafeArea()
-            VStack(alignment: .leading, spacing: 4) {
+            
+            VStack(alignment: .center, spacing: 20) {
+                
                 HStack {
-                    VStack(alignment: .leading, spacing: 4) {
-                        Text(heroesViewModel.selectedHero?.name ?? "")
-                            .font(.system(size: 14, weight: .semibold))
-                        Text(heroesViewModel.selectedHero?.slug ?? "")
+                    
+                    VStack(alignment: .center, spacing: 8) {
+                        
+                        Text(viewModel.selectedHero?.name ?? "")
+                            .font(.system(size: 34, weight: .bold))
+                        
+                        Text(viewModel.selectedHero?.biography.alterEgos ?? "")
                             .font(.system(size: 16, weight: .bold))
+                        
+                        ImageView(url: viewModel.selectedHero?.images?.medium ?? "")
                     }
-                    
-                    Spacer()
-                    
-                    Button(action: {
-                        heroesViewModel.selectedHero = nil
-                    }, label: {
-                        Image(systemName: "xmark.circle.fill")
-                            .font(.system(size: 32, weight: .light))
-                            .padding()
-                    })
                 }
                 
-                Text(heroesViewModel.selectedHero?.slug ?? "")
+                Text(viewModel.selectedHero?.name ?? "")
                     .font(.system(size: 16, weight: .regular))
-                
-                Spacer()
+                Text(viewModel.selectedHero?.biography.fullName ?? "")
+                    .font(.system(size: 16, weight: .bold))
+            
             }
             .padding()
             .foregroundColor(.white)
         }
-        .onAppear {
-            self.heroesViewModel.getHero(id: self.id ?? 0)
-        }
+        //        .onAppear {
+        //
+        //          viewModel.markRead(hero: viewModel.selectedHero!)
+        //        }
+        .edgesIgnoringSafeArea(.all)
     }
 }
-
-
-//   struct ImageView: View {
-//       var url: String?
-//
-//
-//       var body: some View {
-//           guard let urlImage = URL(string: url ?? "") else {
-//               return AnyView(Text("Loading..."))
-//           }
-//           return AnyView(URLImage(urlImage))
-//       }
-//   }
 

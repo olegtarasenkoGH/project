@@ -6,53 +6,42 @@
 //
 
 import SwiftUI
+import Combine
+import Alamofire
 
-struct Hero: Codable, Identifiable {    //MailItem
- 
+struct Hero: Codable, Identifiable {
     let id: Int
     let name: String
-    let slug: String
     let biography: Biography
     let images: Images?
-    var offsetX: CGFloat = 0.0
-    var isRead = false
-    
-    
-    enum CodingKeys: String, CodingKey {
       
+    enum CodingKeys: String, CodingKey {
         case id
         case name
-        case slug
         case biography
         case images
-        
+    
     }
+    
 }
 
 struct Biography: Codable {
-
     let fullName: String
     let alterEgos: String
-
+    
 }
 
-///Hero
-//// mail model class
-//struct MailItem: Identifiable {
-//    let id = UUID()
-//    let senderName: String
-//    let sendTime: String
-//    let title: String
-//    let message: String
-//    var offsetX: CGFloat = 0.0
-//    var isRead = false
-//}
-
 struct Images: Codable {
-    let medium: String
+    
     let large: String
+    let medium: String
+    let small: String
+    let extraSmall: String
     
     enum CodingKeys: String, CodingKey {
+        
+        case extraSmall = "xs"
+        case small = "sm"
         case medium = "md"
         case large = "lg"
     }

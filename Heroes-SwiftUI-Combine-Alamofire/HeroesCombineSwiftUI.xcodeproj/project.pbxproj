@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		844A27942535DB84008CE8A2 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844A27932535DB84008CE8A2 /* ImageView.swift */; };
 		844E5D4D2509C1D3005F0D0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E5D4C2509C1D3005F0D0F /* AppDelegate.swift */; };
 		844E5D4F2509C1D3005F0D0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E5D4E2509C1D3005F0D0F /* SceneDelegate.swift */; };
 		844E5D512509C1D3005F0D0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E5D502509C1D3005F0D0F /* ContentView.swift */; };
@@ -15,21 +16,18 @@
 		844E5D592509C1D6005F0D0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844E5D582509C1D6005F0D0F /* Preview Assets.xcassets */; };
 		844E5D5C2509C1D6005F0D0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844E5D5A2509C1D6005F0D0F /* LaunchScreen.storyboard */; };
 		844E5D682509C54F005F0D0F /* HeroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E5D672509C54F005F0D0F /* HeroModel.swift */; };
-		844E5D6E2509C5C7005F0D0F /* HeroesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E5D6D2509C5C7005F0D0F /* HeroesVM.swift */; };
+		844E5D6E2509C5C7005F0D0F /* HeroesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E5D6D2509C5C7005F0D0F /* HeroesViewModel.swift */; };
 		84671434250E97830068DE09 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 84671433250E97830068DE09 /* Alamofire */; };
 		84671436250E991D0068DE09 /* HeroesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84671435250E991D0068DE09 /* HeroesService.swift */; };
 		84671438250EA3720068DE09 /* HeroDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84671437250EA3720068DE09 /* HeroDetailView.swift */; };
-		8467143A250F75EC0068DE09 /* DetailHeroVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84671439250F75EC0068DE09 /* DetailHeroVM.swift */; };
 		8467143D250F7A1F0068DE09 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 8467143C250F7A1F0068DE09 /* URLImage */; };
-		8467143F250F85440068DE09 /* ImageVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8467143E250F85440068DE09 /* ImageVM.swift */; };
 		847CD59B25321A970089A801 /* HeroListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CD59A25321A970089A801 /* HeroListView.swift */; };
 		847CD59E25321BE90089A801 /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CD59D25321BE90089A801 /* ColorModel.swift */; };
 		847CD5A225321E9A0089A801 /* HeroItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CD5A125321E9A0089A801 /* HeroItemView.swift */; };
-		847CD5A6253225B30089A801 /* SwipeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CD5A5253225B30089A801 /* SwipeButtonView.swift */; };
-		847CD5AD253233C90089A801 /* WaveShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CD5AC253233C90089A801 /* WaveShapeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		844A27932535DB84008CE8A2 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		844E5D492509C1D3005F0D0F /* HeroesCombineSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeroesCombineSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844E5D4C2509C1D3005F0D0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		844E5D4E2509C1D3005F0D0F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,16 +38,12 @@
 		844E5D5B2509C1D6005F0D0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		844E5D5D2509C1D6005F0D0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		844E5D672509C54F005F0D0F /* HeroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroModel.swift; sourceTree = "<group>"; };
-		844E5D6D2509C5C7005F0D0F /* HeroesVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesVM.swift; sourceTree = "<group>"; };
+		844E5D6D2509C5C7005F0D0F /* HeroesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesViewModel.swift; sourceTree = "<group>"; };
 		84671435250E991D0068DE09 /* HeroesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesService.swift; sourceTree = "<group>"; };
 		84671437250EA3720068DE09 /* HeroDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailView.swift; sourceTree = "<group>"; };
-		84671439250F75EC0068DE09 /* DetailHeroVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeroVM.swift; sourceTree = "<group>"; };
-		8467143E250F85440068DE09 /* ImageVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageVM.swift; sourceTree = "<group>"; };
 		847CD59A25321A970089A801 /* HeroListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroListView.swift; sourceTree = "<group>"; };
 		847CD59D25321BE90089A801 /* ColorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
 		847CD5A125321E9A0089A801 /* HeroItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroItemView.swift; sourceTree = "<group>"; };
-		847CD5A5253225B30089A801 /* SwipeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeButtonView.swift; sourceTree = "<group>"; };
-		847CD5AC253233C90089A801 /* WaveShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveShapeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +59,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		844A27972535DC46008CE8A2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				847CD59D25321BE90089A801 /* ColorModel.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		844E5D402509C1D3005F0D0F = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +86,7 @@
 		844E5D4B2509C1D3005F0D0F /* HeroesCombineSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				844A27972535DC46008CE8A2 /* Extension */,
 				844E5D632509C207005F0D0F /* Model */,
 				844E5D642509C210005F0D0F /* View */,
 				844E5D652509C21D005F0D0F /* View Model */,
@@ -108,7 +111,6 @@
 			children = (
 				84671435250E991D0068DE09 /* HeroesService.swift */,
 				844E5D672509C54F005F0D0F /* HeroModel.swift */,
-				847CD59D25321BE90089A801 /* ColorModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -117,11 +119,10 @@
 			isa = PBXGroup;
 			children = (
 				844E5D502509C1D3005F0D0F /* ContentView.swift */,
+				84671437250EA3720068DE09 /* HeroDetailView.swift */,
 				847CD59A25321A970089A801 /* HeroListView.swift */,
 				847CD5A125321E9A0089A801 /* HeroItemView.swift */,
-				84671437250EA3720068DE09 /* HeroDetailView.swift */,
-				847CD5AC253233C90089A801 /* WaveShapeView.swift */,
-				847CD5A5253225B30089A801 /* SwipeButtonView.swift */,
+				844A27932535DB84008CE8A2 /* ImageView.swift */,
 				844E5D5A2509C1D6005F0D0F /* LaunchScreen.storyboard */,
 			);
 			path = View;
@@ -130,9 +131,7 @@
 		844E5D652509C21D005F0D0F /* View Model */ = {
 			isa = PBXGroup;
 			children = (
-				844E5D6D2509C5C7005F0D0F /* HeroesVM.swift */,
-				84671439250F75EC0068DE09 /* DetailHeroVM.swift */,
-				8467143E250F85440068DE09 /* ImageVM.swift */,
+				844E5D6D2509C5C7005F0D0F /* HeroesViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -226,18 +225,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				844E5D4D2509C1D3005F0D0F /* AppDelegate.swift in Sources */,
-				8467143F250F85440068DE09 /* ImageVM.swift in Sources */,
 				847CD59B25321A970089A801 /* HeroListView.swift in Sources */,
-				847CD5A6253225B30089A801 /* SwipeButtonView.swift in Sources */,
+				844A27942535DB84008CE8A2 /* ImageView.swift in Sources */,
 				847CD5A225321E9A0089A801 /* HeroItemView.swift in Sources */,
-				844E5D6E2509C5C7005F0D0F /* HeroesVM.swift in Sources */,
+				844E5D6E2509C5C7005F0D0F /* HeroesViewModel.swift in Sources */,
 				844E5D542509C1D3005F0D0F /* HeroesCombineSwiftUI.xcdatamodeld in Sources */,
-				8467143A250F75EC0068DE09 /* DetailHeroVM.swift in Sources */,
 				844E5D4F2509C1D3005F0D0F /* SceneDelegate.swift in Sources */,
 				844E5D512509C1D3005F0D0F /* ContentView.swift in Sources */,
 				84671438250EA3720068DE09 /* HeroDetailView.swift in Sources */,
 				84671436250E991D0068DE09 /* HeroesService.swift in Sources */,
-				847CD5AD253233C90089A801 /* WaveShapeView.swift in Sources */,
 				844E5D682509C54F005F0D0F /* HeroModel.swift in Sources */,
 				847CD59E25321BE90089A801 /* ColorModel.swift in Sources */,
 			);
