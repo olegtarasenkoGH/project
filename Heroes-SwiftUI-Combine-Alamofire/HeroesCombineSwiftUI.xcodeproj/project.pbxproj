@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		844A27942535DB84008CE8A2 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844A27932535DB84008CE8A2 /* ImageView.swift */; };
+		844A27942535DB84008CE8A2 /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844A27932535DB84008CE8A2 /* ImageViewModel.swift */; };
 		844E5D4D2509C1D3005F0D0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E5D4C2509C1D3005F0D0F /* AppDelegate.swift */; };
 		844E5D4F2509C1D3005F0D0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E5D4E2509C1D3005F0D0F /* SceneDelegate.swift */; };
 		844E5D512509C1D3005F0D0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E5D502509C1D3005F0D0F /* ContentView.swift */; };
@@ -27,7 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		844A27932535DB84008CE8A2 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		844A27932535DB84008CE8A2 /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
 		844E5D492509C1D3005F0D0F /* HeroesCombineSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeroesCombineSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844E5D4C2509C1D3005F0D0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		844E5D4E2509C1D3005F0D0F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,7 +122,6 @@
 				84671437250EA3720068DE09 /* HeroDetailView.swift */,
 				847CD59A25321A970089A801 /* HeroListView.swift */,
 				847CD5A125321E9A0089A801 /* HeroItemView.swift */,
-				844A27932535DB84008CE8A2 /* ImageView.swift */,
 				844E5D5A2509C1D6005F0D0F /* LaunchScreen.storyboard */,
 			);
 			path = View;
@@ -132,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				844E5D6D2509C5C7005F0D0F /* HeroesViewModel.swift */,
+				844A27932535DB84008CE8A2 /* ImageViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -226,7 +226,7 @@
 			files = (
 				844E5D4D2509C1D3005F0D0F /* AppDelegate.swift in Sources */,
 				847CD59B25321A970089A801 /* HeroListView.swift in Sources */,
-				844A27942535DB84008CE8A2 /* ImageView.swift in Sources */,
+				844A27942535DB84008CE8A2 /* ImageViewModel.swift in Sources */,
 				847CD5A225321E9A0089A801 /* HeroItemView.swift in Sources */,
 				844E5D6E2509C5C7005F0D0F /* HeroesViewModel.swift in Sources */,
 				844E5D542509C1D3005F0D0F /* HeroesCombineSwiftUI.xcdatamodeld in Sources */,

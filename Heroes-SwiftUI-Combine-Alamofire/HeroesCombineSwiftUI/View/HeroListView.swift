@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Combine
 
 struct HeroListView: View {
     @ObservedObject var viewModel: HeroesViewModel

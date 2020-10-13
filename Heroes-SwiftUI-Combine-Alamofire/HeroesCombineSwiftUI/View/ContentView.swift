@@ -6,16 +6,16 @@
 //
 
 import SwiftUI
-import Combine
-
 
 struct ContentView: View {
 
     @ObservedObject var viewModel = HeroesViewModel()
     var body: some View {
+       
         ZStack {
             
             Color.darkPurple
+                      
            
             HeroListView(viewModel: viewModel)
                 

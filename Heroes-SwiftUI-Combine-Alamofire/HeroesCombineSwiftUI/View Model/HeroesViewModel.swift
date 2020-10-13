@@ -32,18 +32,4 @@ class HeroesViewModel: ObservableObject {
             })
     }
     
-//    func getHero(id: Int) {
-//        cancel = service.get(id: id)
-//            .mapError({ (error) -> Error in
-//                print(error)
-//                return error
-//            })
-//            .sink(receiveCompletion: { _ in },
-//                  receiveValue: { hero in
-//                    self.heroDetail = hero
-//                  })
-//    }
-    
-
-    
 }
