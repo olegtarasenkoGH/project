@@ -29,8 +29,8 @@ struct HeroDetailView: View {
                             .padding()
                         
                         ImageView(url: viewModel.selectedHero?.images?.medium ?? "")
-                            .clipShape(RoundedRectangle(cornerRadius: 70, style: .continuous))
-                            .shadow(color: Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)).opacity(0.7), radius: 20, x: 0, y: 0)
+                            .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+                            .shadow(color: Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)).opacity(0.7), radius: 5, x: 0, y: 0)
 
                     }
                 }

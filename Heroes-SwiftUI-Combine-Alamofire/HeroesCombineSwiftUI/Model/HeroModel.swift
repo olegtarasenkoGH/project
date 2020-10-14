@@ -9,12 +9,14 @@ import SwiftUI
 
 
 struct Hero: Codable, Identifiable {
+    
     let id: Int
     let name: String
     let biography: Biography
     let images: Images?
       
     enum CodingKeys: String, CodingKey {
+        
         case id
         case name
         case biography
@@ -25,6 +27,7 @@ struct Hero: Codable, Identifiable {
 }
 
 struct Biography: Codable {
+    
     let fullName: String
     let alterEgos: String
     

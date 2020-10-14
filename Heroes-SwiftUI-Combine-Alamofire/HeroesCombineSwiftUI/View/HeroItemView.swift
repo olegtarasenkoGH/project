@@ -12,10 +12,11 @@ struct HeroItemView: View {
     let hero: Hero
     var body: some View {
         ZStack {
-            Color.lightPurple
-               
+            //Color.lightPurple
+            Color.radial
+            
                 .clipShape(RoundedRectangle(cornerRadius: 25, style: .continuous))
-                .shadow(color: Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)).opacity(0.2), radius: 15, x: 0, y: 0)
+                .shadow(color: Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)).opacity(0.5), radius: 5, x: 0, y: 0)
             
             HStack(alignment: .top) {
                 VStack(alignment: .leading, spacing: 4) {
