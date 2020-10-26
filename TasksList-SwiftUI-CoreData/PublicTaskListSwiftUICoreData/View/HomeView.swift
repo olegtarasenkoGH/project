@@ -30,15 +30,15 @@ struct Home: View {
                         .font(.title)
                         .fontWeight(.heavy)
                         .foregroundColor(.black)
+                   
                         
                     Spacer(minLength: 0)
                 }
                 
                 .padding()
                 .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
-                .background(Color(#colorLiteral(red: 0.9607030749, green: 0.9718312621, blue: 0.9789928794, alpha: 1)))
-            
-             
+                .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 0.06210771939)))
+                
                 
                 // Empty View
                 if results.isEmpty{
@@ -63,17 +63,13 @@ struct Home: View {
                                         .font(.title)
                                         .fontWeight(.bold)
                                         .padding(.horizontal, 15)
-                                    //    .frame(width:  400)
-                                    
+                                                                       
                                     Text(task.date ?? Date(), style: .date)
-                                        //.fontWeight(.bold)
+                                        
                                         .frame(width: UIScreen.main.bounds.width - 32)
-                                     //   .frame(width:  400)
-                                       
+                                     
                                 })
-                                
-                               // .frame(width:  400)
-                            
+                      
                                 .padding(.vertical)
                                 .background(Color.radial)
                                 .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
@@ -106,23 +102,19 @@ struct Home: View {
             }
 
         // Add button
-        Button(action: {homeData.newData.toggle()}, label: {
-            Text("NEW TASK")
-
-                .fontWeight(.bold)
-                .foregroundColor(.white )
-                .padding(.horizontal, 20)
-                .padding(.vertical, 20)
-                .frame(width: UIScreen.main.bounds.width - 40)
-                .background(
-
-                    LinearGradient(gradient: Gradient(colors:[Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)),Color(#colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1))]),
-                        startPoint: .leading, endPoint: .trailing)
-
-                        .clipShape(RoundedRectangle(cornerRadius: 24, style: .continuous))
-                        .shadow(color: Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)).opacity(0.7), radius: 20, x: 7, y: 7)
+            Button(action: {homeData.newData.toggle()}, label: {
+                Text("NEW TASK")
                     
-                )
+                    .fontWeight(.bold)
+                    .foregroundColor(.white )
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 20)
+                    .frame(width: UIScreen.main.bounds.width - 40)
+                    .background(Color.linearOn )
+                    .clipShape(RoundedRectangle(cornerRadius: 24, style: .continuous))
+                    .shadow(color: Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)).opacity(1.7), radius: 20, x: 7, y: 7)
+                
+                
         }
         )
         })
