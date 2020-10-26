@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8436C065252D1D7400A54D89 /* DateButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8436C064252D1D7400A54D89 /* DateButtonView.swift */; };
+		8473758B2547558800841928 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473758A2547558800841928 /* ColorExtension.swift */; };
 		84C624D8252D0105005B3187 /* PublicTaskListSwiftUICoreDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C624D7252D0105005B3187 /* PublicTaskListSwiftUICoreDataApp.swift */; };
 		84C624DA252D0105005B3187 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C624D9252D0105005B3187 /* ContentView.swift */; };
 		84C624DC252D0106005B3187 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C624DB252D0106005B3187 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		8436C064252D1D7400A54D89 /* DateButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateButtonView.swift; sourceTree = "<group>"; };
+		8473758A2547558800841928 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		84C624D4252D0105005B3187 /* PublicTaskListSwiftUICoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PublicTaskListSwiftUICoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C624D7252D0105005B3187 /* PublicTaskListSwiftUICoreDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicTaskListSwiftUICoreDataApp.swift; sourceTree = "<group>"; };
 		84C624D9252D0105005B3187 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				84FD7428252FA53F008D729D /* BlurModel.swift */,
+				8473758A2547558800841928 /* ColorExtension.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				84C624F0252D05B8005B3187 /* HomeView.swift in Sources */,
 				84FD7429252FA53F008D729D /* BlurModel.swift in Sources */,
 				84C624F8252D0863005B3187 /* NewDataView.swift in Sources */,
+				8473758B2547558800841928 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

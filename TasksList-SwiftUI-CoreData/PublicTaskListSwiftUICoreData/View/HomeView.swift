@@ -54,29 +54,32 @@ struct Home: View {
                     
                     ScrollView (.vertical, showsIndicators: true, content: {
                         
-                        LazyVStack(alignment: .leading, spacing: 20){
+                        LazyVStack(alignment: .leading, spacing: 10){
                             ForEach(results){ task in
                                 
                                 VStack(alignment: .leading, spacing: 5, content: {
-                                            
+                                
                                     Text(task.content ?? "")
                                         .font(.title)
                                         .fontWeight(.bold)
+                                        .padding(.horizontal, 15)
+                                    //    .frame(width:  400)
                                     
                                     Text(task.date ?? Date(), style: .date)
-                                        .fontWeight(.bold)
+                                        //.fontWeight(.bold)
+                                        .frame(width: UIScreen.main.bounds.width - 32)
+                                     //   .frame(width:  400)
+                                       
                                 })
                                 
+                               // .frame(width:  400)
+                            
+                                .padding(.vertical)
+                                .background(Color.radial)
+                                .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+                                .shadow(color: Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)).opacity(0.3), radius: 10)
                                 .foregroundColor(.black)
-                                
-                               .padding(.vertical, 10)
-                                
                               
-                              //  .background(Color(#colorLiteral(red: 0.8425681591, green: 0.838967979, blue: 0.8453604579, alpha: 0.5)))
-                               // .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
-                             //   .frame(width: UIScreen.main.bounds.width - 30)
-                              //.background(BlurModel(style: .regular))
-                                
                                 .contextMenu{
                                     
                                     Button(action: {homeData.editItem(item: task)}, label: {

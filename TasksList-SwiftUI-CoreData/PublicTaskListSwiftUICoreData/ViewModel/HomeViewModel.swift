@@ -44,11 +44,6 @@ class HomeViewModel: ObservableObject {
         default:
             break
         }
-           
-        
-//        if value == "Сегодня"{date = Date()}
-//        else if value == "Завтра" { date = calender.date(byAdding: .day, value: 1, to: Date())!
-//        } else{ "777"}
     
     }
     
