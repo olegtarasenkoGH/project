@@ -26,13 +26,13 @@ struct Home: View {
                 
                 HStack(alignment: .center){
                     
-                    Text("Tasks")
+                    Text("Задания")
                         .font(.title)
                         .fontWeight(.heavy)
                         .foregroundColor(.black)
                    
                         
-                    Spacer(minLength: 0)
+                   // Spacer(minLength: 0)
                 }
                 
                 .padding()
@@ -44,7 +44,7 @@ struct Home: View {
                 if results.isEmpty{
                     Spacer()
                     
-                Text("No Task")
+                Text("Нет заданий")
                     .font(.title)
                     .fontWeight(.bold)
                     
@@ -103,7 +103,7 @@ struct Home: View {
 
         // Add button
             Button(action: {homeData.newData.toggle()}, label: {
-                Text("NEW TASK")
+                Text("Довавить задание")
                     
                     .fontWeight(.bold)
                     .foregroundColor(.white )

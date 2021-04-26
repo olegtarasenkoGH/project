@@ -16,21 +16,18 @@ struct NewDataView: View {
             
             HStack {
                 
-                Text( homeData.updateItem == nil ? "Add New" : "Update")
-                    .font(.system(size: 42))
+                Text( homeData.updateItem == nil ? "Новое задание" : "Обновить")
+                    .font(.system(size: 32))
                     .fontWeight(.bold)
                     .foregroundColor(.black)
                 
-                    Spacer(minLength: 0)
+                   // Spacer(minLength: 0)
             }
             .padding()
             
             TextEditor(text: $homeData.content)
                 .cornerRadius(30.0, antialiased: true)
-                .padding()
-            
-            Divider()
-                .padding(.horizontal)
+              .padding(.horizontal)
             
             HStack {
                 
@@ -39,7 +36,7 @@ struct NewDataView: View {
                     .fontWeight(.bold)
                     .foregroundColor(.black)
                 
-                Spacer(minLength: 0)
+              //  Spacer(minLength: 0)
             }
             
             .padding()
@@ -61,7 +58,7 @@ struct NewDataView: View {
             // Add button
             Button(action: {homeData.writeData(context: context)}, label: {
                 Label(
-                    title: {  Text( homeData.updateItem == nil ? "Add New" : " Update")
+                    title: {  Text( homeData.updateItem == nil ? "Добавить" : "Обновить")
                         .font(.title2)
                         .foregroundColor(.white)
                         .fontWeight(.semibold)
